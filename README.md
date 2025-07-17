@@ -4,7 +4,7 @@
 I have performed an analysis of retail sales data using SQL. In which a few business questions have been addressed through SQL queries.
 
 ## Dataset used
--<a href=Retail-sales-analysis-report/Retail Sales Analysis_dataset.csv at main · Kanissma/Retail-sales-analysis-report>Dataset</a>
+-<a href=https://github.com/Kanissma/Retail-sales-analysis-report/blob/main/Retail%20Sales%20Analysis_dataset.csv>Dataset</a>
 
 ## Objective
 1.	Setting up a database: Create a database and table for the data set available. 
