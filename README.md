@@ -294,4 +294,5 @@ Across different age groups, both genders contributed to sales in all product ca
 Most orders and the highest revenue came during the evening hours.
 Among all days, Sunday generated the highest total revenue.
 
-
+## Conclusion
+This project offers valuable insights into sales performance by using SQL-based analysis. It helps in understanding customer behavior, identifying sales trends, and supports data-driven decisions for optimizing staffing, tailoring promotional offers, and enhancing marketing strategies.
