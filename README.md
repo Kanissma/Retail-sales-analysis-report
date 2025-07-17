@@ -113,13 +113,14 @@ FROM retail_sales
 ORDER BY total_sale DESC
 LIMIT 1;
 
---Q5 Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
-SELECT year, month, "sales average"
+--Q5 Write a SQL query to calculate the best-selling month in each year. (Highest revenue generated month)
+
+SELECT year, month, "total_sales"
 FROM(
 SELECT EXTRACT(YEAR FROM sale_date) AS "year",
 TO_CHAR(sale_date, 'Month') AS "month",
-ROUND(AVG(total_sale)::numeric,2) AS "sales average",
-RANK() OVER(PARTITION BY EXTRACT(YEAR FROM sale_date) ORDER BY AVG(total_sale) DESC) AS "rank"
+SUM(total_sale) AS "total_sales",
+RANK() OVER(PARTITION BY EXTRACT(YEAR FROM sale_date) ORDER BY SUM(total_sale) DESC) AS "rank"
 FROM retail_sales
 GROUP BY EXTRACT(YEAR FROM sale_date), TO_CHAR(sale_date, 'Month'))S1
 WHERE rank=1;
