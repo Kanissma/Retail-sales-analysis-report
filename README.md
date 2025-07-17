@@ -276,7 +276,22 @@ ORDER BY total_revenue DESC;
 ```
 
 ## Insights drawn
-
-
+Below are the insights drawn based on the ouputs of above SQL queries.
+1. Sales & Revenue Analysis
+Electronics brought in the highest revenue, while Clothing had the most number of orders.
+Many transactions had sales over 1000, showing a good number of premium purchases.
+Sales in 2023 were higher than in 2022 overall, but some months still showed a drop from the previous month. December was the top sales month in both years, showing a clear seasonal pattern.
+2. Sales & Revenue Analysis
+Electronics brought in the highest revenue, while Clothing had the most number of orders.
+Many transactions had sales over 1000, showing a good number of premium purchases.
+Sales in 2023 were higher than in 2022 overall, but some months still showed a drop from the previous month. December was the top sales month in both years, showing a clear seasonal pattern.
+3. Product/Category Insights
+Over 90% of customers bought items from each category, suggesting wide interest in all types of products.
+4. Demographic Analysis
+Both men and women purchased more Clothing items than other categories.
+Across different age groups, both genders contributed to sales in all product categories in different ratio.
+5. Time-Based & Shift Analysis
+Most orders and the highest revenue came during the evening hours.
+Among all days, Sunday generated the highest total revenue.
 
 
