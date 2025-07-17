@@ -197,15 +197,6 @@ SELECT category, COUNT(DISTINCT customer_id) AS "Customer count"
 FROM retail_sales
 GROUP BY category;
 
---Q4 Which category has the highest return on average per unit sold? -- Use price_per_unit or cogs to evaluate margin.
-SELECT category,
-ROUND(AVG(price_per_unit-(cogs/quantity))::numeric,2) AS avg_profit_per_unit
-FROM retail_sales
-WHERE quantity > 0
-GROUP BY category
-ORDER BY avg_profit_per_unit DESC
-LIMIT 1;
-
 --Demographic Analysis
 
 --Q1 Write a SQL query to find the total number of transactions (transactions_id) made by each gender in each category.
