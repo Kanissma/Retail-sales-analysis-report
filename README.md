@@ -248,10 +248,10 @@ WHEN EXTRACT(HOUR FROM sale_time) > 17 THEN 'Evening'
 END AS shift
 FROM retail_sales
 )
-SELECT shift, category, COUNT(*) AS total_orders
+SELECT shift, category, SUM(total_sale) AS total_revenue
 FROM hourly_order
 GROUP BY shift, category
-ORDER BY shift, total_orders DESC;
+ORDER BY shift, total_revenue DESC;
 
 --Q3 Compare total sales between weekdays vs weekends. 
 SELECT 
